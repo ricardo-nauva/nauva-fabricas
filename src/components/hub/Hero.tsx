@@ -1,30 +1,27 @@
+const CTA_URL = "https://www.nauva.ai/website";
+
 export default function Hero() {
   return (
-    <section className="border-b border-neutral-200 bg-white">
-      <div className="mx-auto max-w-6xl px-6 py-24">
-        <p className="text-sm font-semibold uppercase tracking-widest text-neutral-500">
+    <section className="border-b border-slate-200 bg-white">
+      <div className="mx-auto max-w-4xl px-6 py-24 text-center">
+        <p className="text-sm font-semibold uppercase tracking-widest text-slate-500">
           Sites para indústria transformadora
         </p>
-        <h1 className="mt-4 max-w-3xl text-4xl font-bold leading-tight tracking-tight text-neutral-900 sm:text-5xl">
-          Sites que apresentam a sua fábrica com a seriedade que merece.
+        <h1 className="mx-auto mt-4 max-w-2xl text-4xl font-bold leading-tight tracking-tight text-slate-900 sm:text-5xl">
+          A sua fábrica merece um site à altura do que produz.
         </h1>
-        <p className="mt-6 max-w-2xl text-lg text-neutral-600">
-          Criamos sites dedicados para empresas industriais — metalomecânica, plásticos,
-          têxtil, embalagem, alimentar — construídos à volta do processo produtivo,
-          catálogo e certificações reais de cada fábrica.
+        <p className="mx-auto mt-6 max-w-xl text-lg text-slate-600">
+          Criamos sites dedicados para empresas industriais — construídos à volta do
+          processo produtivo, catálogo e certificações reais de cada fábrica.
         </p>
-        <div className="mt-10 flex flex-wrap gap-4">
+        <div className="mt-10 flex flex-wrap justify-center gap-4">
           <a
-            href="#contacto"
-            className="rounded-none border border-neutral-900 bg-neutral-900 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white hover:text-neutral-900"
+            href={CTA_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full bg-gradient-to-r from-[#2CA9E0] via-[#6D5CE8] to-[#7A5CF0] px-7 py-3 text-sm font-semibold text-white shadow-sm transition-opacity hover:opacity-90"
           >
             Pedir Proposta
-          </a>
-          <a
-            href="#servicos"
-            className="rounded-none border border-neutral-300 px-6 py-3 text-sm font-semibold text-neutral-800 transition-colors hover:border-neutral-900"
-          >
-            Ver Serviços
           </a>
         </div>
       </div>

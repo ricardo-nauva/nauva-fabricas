@@ -19,16 +19,19 @@ const SERVICOS = [
 
 export default function Servicos() {
   return (
-    <section id="servicos" className="border-b border-neutral-200 bg-white">
+    <section id="servicos" className="border-b border-slate-200 bg-white">
       <div className="mx-auto max-w-6xl px-6 py-20">
-        <h2 className="text-3xl font-bold tracking-tight text-neutral-900">
-          O que incluímos
+        <h2 className="text-center text-3xl font-bold tracking-tight text-slate-900">
+          O que está incluído
         </h2>
-        <div className="mt-12 grid gap-px overflow-hidden border border-neutral-200 sm:grid-cols-2">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2">
           {SERVICOS.map((s) => (
-            <div key={s.title} className="border border-neutral-200 bg-white p-8">
-              <h3 className="text-lg font-semibold text-neutral-900">{s.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-neutral-600">{s.desc}</p>
+            <div
+              key={s.title}
+              className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm"
+            >
+              <h3 className="text-lg font-semibold text-slate-900">{s.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-slate-600">{s.desc}</p>
             </div>
           ))}
         </div>
