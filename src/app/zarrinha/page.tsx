@@ -4,6 +4,7 @@ import Hero from "@/components/zarrinha/Hero";
 import Historia from "@/components/zarrinha/Historia";
 import SobreNos from "@/components/zarrinha/SobreNos";
 import Produtos from "@/components/zarrinha/Produtos";
+import ProcessoProdutivo from "@/components/zarrinha/ProcessoProdutivo";
 import Certificacoes from "@/components/zarrinha/Certificacoes";
 import Sustentabilidade from "@/components/zarrinha/Sustentabilidade";
 import Sectores from "@/components/zarrinha/Sectores";
@@ -25,6 +26,7 @@ export default function ZarrinhaPage() {
         <Historia />
         <SobreNos />
         <Produtos />
+        <ProcessoProdutivo />
         <Certificacoes />
         <Sustentabilidade />
         <Sectores />

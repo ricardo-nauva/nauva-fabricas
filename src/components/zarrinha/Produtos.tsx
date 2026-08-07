@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const CATEGORIAS = [
   {
     titulo: "Embalagens de Cartão",
@@ -43,6 +45,22 @@ export default function Produtos() {
           <h2 className="text-3xl font-bold uppercase tracking-tight text-neutral-900">
             Produtos
           </h2>
+        </div>
+
+        <div className="mb-14 grid gap-10 lg:grid-cols-[360px_1fr] lg:items-center">
+          <div className="relative aspect-[4/3] overflow-hidden border-2 border-neutral-900">
+            <Image
+              src="/zarrinha/produtos.jpg"
+              alt="Embalagens de cartão canelado empilhadas — representação ilustrativa"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <p className="text-sm leading-relaxed text-neutral-700">
+            Possuímos uma grande variedade de equipamentos de última geração, que nos
+            permitem produzir todo o tipo de embalagens de cartão canelado, com
+            diferentes tipos de cartão, modelos e qualidades de impressão.
+          </p>
         </div>
 
         <div className="space-y-14">

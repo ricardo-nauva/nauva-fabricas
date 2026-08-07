@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const MARCOS = [
   { ano: "1956", titulo: "O Início", desc: "O Sr. Orlando de Oliveira Santos adquire uma pequena fábrica de produção de papel seco ao ar, com cerca de 1.200 m²." },
   { ano: "1962", titulo: "Ampliação das Instalações", desc: "Instalação de uma bateria de secadores e respetivo equipamento, gerador a vapor, máquina de corte mecânico e rebobinadora." },
@@ -24,21 +26,37 @@ export default function Historia() {
           </span>
         </div>
 
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-1">
-          {MARCOS.map((m) => (
-            <div
-              key={m.ano}
-              className="grid grid-cols-[auto_1fr] gap-x-6 border-l-2 border-[#007d32] pl-6 lg:grid-cols-[120px_1fr] lg:items-baseline"
-            >
-              <span className="font-mono text-2xl font-bold text-[#007d32]">{m.ano}</span>
-              <div>
-                <h3 className="text-base font-bold uppercase tracking-tight text-neutral-900">
-                  {m.titulo}
-                </h3>
-                <p className="mt-1 text-sm leading-relaxed text-neutral-600">{m.desc}</p>
+        <div className="grid gap-12 lg:grid-cols-[1fr_360px]">
+          <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-1">
+            {MARCOS.map((m) => (
+              <div
+                key={m.ano}
+                className="grid grid-cols-[auto_1fr] gap-x-6 border-l-2 border-[#007d32] pl-6 lg:grid-cols-[120px_1fr] lg:items-baseline"
+              >
+                <span className="font-mono text-2xl font-bold text-[#007d32]">{m.ano}</span>
+                <div>
+                  <h3 className="text-base font-bold uppercase tracking-tight text-neutral-900">
+                    {m.titulo}
+                  </h3>
+                  <p className="mt-1 text-sm leading-relaxed text-neutral-600">{m.desc}</p>
+                </div>
               </div>
+            ))}
+          </div>
+
+          <div className="lg:sticky lg:top-24 lg:self-start">
+            <div className="relative aspect-[4/5] overflow-hidden border-2 border-neutral-900">
+              <Image
+                src="/zarrinha/historia.jpg"
+                alt="Maquinaria industrial de fabrico de papel — representação ilustrativa"
+                fill
+                className="object-cover"
+              />
             </div>
-          ))}
+            <p className="mt-3 font-mono text-[11px] uppercase tracking-widest text-neutral-500">
+              Representação ilustrativa do processo industrial
+            </p>
+          </div>
         </div>
       </div>
     </section>
