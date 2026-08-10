@@ -33,7 +33,7 @@ export default function Produtos() {
           {PRODUTOS.map((p) => (
             <div
               key={p.nome}
-              className="overflow-hidden rounded-lg border border-[#1D2733]/10 bg-white shadow-sm"
+              className="flex flex-col overflow-hidden rounded-lg border border-[#1D2733]/10 bg-white shadow-sm"
             >
               <div className="relative aspect-square bg-white">
                 <Image
@@ -43,7 +43,7 @@ export default function Produtos() {
                   className="object-contain p-6"
                 />
               </div>
-              <div className="bg-[#444444] px-3 py-2.5 text-center text-sm font-semibold text-white">
+              <div className="flex min-h-[3.25rem] flex-1 items-center justify-center bg-[#444444] px-3 py-2.5 text-center text-sm font-semibold leading-snug text-white">
                 {p.nome}
               </div>
             </div>
