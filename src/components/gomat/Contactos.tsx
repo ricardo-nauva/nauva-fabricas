@@ -1,10 +1,10 @@
 const CAMPOS = [
-  { label: "Nome", type: "text", full: false },
-  { label: "Empresa", type: "text", full: false },
-  { label: "Email", type: "email", full: false, required: true },
-  { label: "Telefone", type: "tel", full: false },
-  { label: "Código Postal de Entrega", type: "text", full: false },
-  { label: "Prazo de entrega pretendido", type: "text", full: false },
+  { label: "Nome", type: "text" },
+  { label: "Empresa", type: "text" },
+  { label: "Email", type: "email", required: true },
+  { label: "Telefone", type: "tel" },
+  { label: "Código Postal de Entrega", type: "text" },
+  { label: "Prazo de Entrega Pretendido", type: "text" },
 ];
 
 export default function Contactos() {
@@ -13,11 +13,16 @@ export default function Contactos() {
       <div className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
         <div className="mb-14 max-w-2xl">
           <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#D8432E]">
-            Contactos
+            Contactos &amp; Cotação Online
           </span>
           <h2 className="mt-3 font-[family-name:var(--font-barlow-condensed)] text-3xl font-extrabold uppercase text-[#1D2733] sm:text-4xl">
-            Fale connosco
+            Peça a sua cotação sem compromisso
           </h2>
+          <p className="mt-4 leading-relaxed text-[#3D4A59]">
+            Não fornecemos preços por telefone. Preencha o formulário abaixo ou
+            envie-nos o seu pedido por email — comprometemo-nos a responder
+            brevemente a todas as solicitações.
+          </p>
         </div>
 
         <div className="grid gap-12 lg:grid-cols-2">
@@ -84,8 +89,9 @@ export default function Contactos() {
               Pedido de cotação online
             </h3>
             <p className="mt-2 text-sm leading-relaxed text-[#3D4A59]">
-              Preencha os dados abaixo. Não fornecemos preços por telefone, mas
-              comprometemo-nos a responder brevemente a todas as solicitações.
+              Indique o(s) produto(s) pretendido(s) o mais especificamente
+              possível: modelos, tipo de material, quantidades, comprimentos,
+              espessuras, cores, etc.
             </p>
 
             <form
@@ -96,7 +102,10 @@ export default function Contactos() {
             >
               <div className="grid gap-4 sm:grid-cols-2">
                 {CAMPOS.map((c) => (
-                  <label key={c.label} className="block text-xs font-semibold uppercase tracking-widest text-[#1D2733]">
+                  <label
+                    key={c.label}
+                    className="flex h-full flex-col justify-end text-xs font-semibold uppercase tracking-widest text-[#1D2733]"
+                  >
                     {c.label}
                     <input
                       type={c.type}
@@ -109,7 +118,7 @@ export default function Contactos() {
               </div>
 
               <label className="block text-xs font-semibold uppercase tracking-widest text-[#1D2733]">
-                Produto(s) pretendido(s)
+                Produto(s) Pretendido(s)
                 <textarea
                   name="Descrição do pedido"
                   rows={4}

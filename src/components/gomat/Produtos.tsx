@@ -35,12 +35,12 @@ export default function Produtos() {
               key={p.nome}
               className="overflow-hidden rounded-lg border border-[#1D2733]/10 bg-white shadow-sm"
             >
-              <div className="relative aspect-square bg-white p-4">
+              <div className="relative aspect-square bg-white">
                 <Image
                   src={p.img}
                   alt={p.nome}
                   fill
-                  className="object-contain p-4"
+                  className="object-contain p-6"
                 />
               </div>
               <div className="bg-[#444444] px-3 py-2.5 text-center text-sm font-semibold text-white">

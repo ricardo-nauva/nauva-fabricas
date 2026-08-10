@@ -34,7 +34,7 @@ export default function Header() {
             </a>
           ))}
           <a
-            href="#cotacao-online"
+            href="#contactos"
             className="rounded bg-[#D8432E] px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#B5321F]"
           >
             Cotação Online
@@ -65,7 +65,7 @@ export default function Header() {
               </a>
             ))}
             <a
-              href="#cotacao-online"
+              href="#contactos"
               onClick={() => setOpen(false)}
               className="mt-3 rounded bg-[#D8432E] px-5 py-3 text-center text-sm font-semibold text-white"
             >

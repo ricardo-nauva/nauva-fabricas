@@ -17,7 +17,7 @@ export default function Hero() {
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a
-              href="#cotacao-online"
+              href="#contactos"
               className="rounded bg-[#D8432E] px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#B5321F]"
             >
               Pedir Cotação Online

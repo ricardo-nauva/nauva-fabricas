@@ -7,7 +7,6 @@ import Produtos from "@/components/gomat/Produtos";
 import Profissionais from "@/components/gomat/Profissionais";
 import Video from "@/components/gomat/Video";
 import Certificacoes from "@/components/gomat/Certificacoes";
-import CotacaoOnline from "@/components/gomat/CotacaoOnline";
 import Contactos from "@/components/gomat/Contactos";
 import Footer from "@/components/gomat/Footer";
 
@@ -28,7 +27,6 @@ export default function GomatPage() {
         <Profissionais />
         <Video />
         <Certificacoes />
-        <CotacaoOnline />
         <Contactos />
       </main>
       <Footer />
