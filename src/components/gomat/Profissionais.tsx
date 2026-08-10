@@ -45,7 +45,7 @@ export default function Profissionais() {
           </p>
           <div className="mt-8 space-y-6">
             {CAPACIDADES.map((c) => (
-              <div key={c.titulo} className="border-l-2 border-[#1D4E89] pl-4">
+              <div key={c.titulo} className="border-l-2 border-[#D8432E] pl-4">
                 <h3 className="font-semibold text-[#1D2733]">{c.titulo}</h3>
                 <p className="text-sm text-[#3D4A59]">{c.desc}</p>
               </div>

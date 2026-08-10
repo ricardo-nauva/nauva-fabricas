@@ -5,6 +5,7 @@ import Hero from "@/components/gomat/Hero";
 import SobreEmpresa from "@/components/gomat/SobreEmpresa";
 import Produtos from "@/components/gomat/Produtos";
 import Profissionais from "@/components/gomat/Profissionais";
+import Video from "@/components/gomat/Video";
 import Certificacoes from "@/components/gomat/Certificacoes";
 import CotacaoOnline from "@/components/gomat/CotacaoOnline";
 import Contactos from "@/components/gomat/Contactos";
@@ -25,6 +26,7 @@ export default function GomatPage() {
         <SobreEmpresa />
         <Produtos />
         <Profissionais />
+        <Video />
         <Certificacoes />
         <CotacaoOnline />
         <Contactos />

@@ -18,7 +18,7 @@ export default function Hero() {
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="#cotacao-online"
-              className="rounded bg-[#1D4E89] px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#153B68]"
+              className="rounded bg-[#D8432E] px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#B5321F]"
             >
               Pedir Cotação Online
             </a>

@@ -28,14 +28,14 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-[#3D4A59] transition-colors hover:text-[#1D4E89]"
+              className="text-sm font-medium text-[#3D4A59] transition-colors hover:text-[#D8432E]"
             >
               {link.label}
             </a>
           ))}
           <a
             href="#cotacao-online"
-            className="rounded bg-[#1D4E89] px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#153B68]"
+            className="rounded bg-[#D8432E] px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#B5321F]"
           >
             Cotação Online
           </a>
@@ -67,7 +67,7 @@ export default function Header() {
             <a
               href="#cotacao-online"
               onClick={() => setOpen(false)}
-              className="mt-3 rounded bg-[#1D4E89] px-5 py-3 text-center text-sm font-semibold text-white"
+              className="mt-3 rounded bg-[#D8432E] px-5 py-3 text-center text-sm font-semibold text-white"
             >
               Cotação Online
             </a>
